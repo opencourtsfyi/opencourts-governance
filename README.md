@@ -13,6 +13,7 @@ documentation, policies
 - Governance policies: `policies/`
 - Automation: `automation/`
 	- Issue generation tooling: `automation/issue-generation/`
+	- SDD generation tooling: `automation/sdd-generation/`
 
 ## How to propose changes
 
