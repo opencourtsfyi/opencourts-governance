@@ -1,0 +1,27 @@
+name: Generate issues (placeholder)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate issue JSON
+        run: |
+          python automation/issue-generation/scripts/generate_issues.py \
+            --input charter/project-charter.md design/software-requirements-specification.md design/software-design-document.md \
+            --output automation/issue-generation/examples/sample-output.json
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-issues
+          path: automation/issue-generation/examples/sample-output.json

@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Review and break down: charter/project-charter.md",
+    "body": "Create volunteer-sized tasks from this document.\n\nDocument excerpt (first 400 chars):\n\n# OpenCourts.fyi Governance Charter\n\n*A volunteer-led, self-correcting justice data project for North and South Carolina.*\n\n",
+    "labels": ["triage", "automation"],
+    "priority": "medium",
+    "source": "charter/project-charter.md"
+  }
+]
