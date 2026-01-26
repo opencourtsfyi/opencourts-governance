@@ -3,7 +3,7 @@
   FR-1: Create and manage datasets
 
 - **Problem Statement:**  
-  Implement FR-1 as specified in the SRS.
+  Implement FR-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an authorized user, I can create datasets with title, description, tags, jurisdiction (state, county), court level..
@@ -34,7 +34,7 @@
   FR-2: Dataset versions
 
 - **Problem Statement:**  
-  Implement FR-2 as specified in the SRS.
+  Implement FR-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can see when a dataset was last updated and, where possible, what changed..
@@ -63,7 +63,7 @@
   FR-2A: Update / recrawl metadata
 
 - **Problem Statement:**  
-  Implement FR-2A as specified in the SRS.
+  Implement FR-2A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Update / recrawl metadata.
@@ -92,7 +92,7 @@
   FR-3: Dataset search and discovery
 
 - **Problem Statement:**  
-  Implement FR-3 as specified in the SRS.
+  Implement FR-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can search datasets by keywords, tags, jurisdiction, date ranges, court type, data type..
@@ -120,7 +120,7 @@
   FR-4: CSV and JSON access
 
 - **Problem Statement:**  
-  Implement FR-4 as specified in the SRS.
+  Implement FR-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can CSV and JSON access.
@@ -148,7 +148,7 @@
   FR-5: Machine-readable catalogues
 
 - **Problem Statement:**  
-  Implement FR-5 as specified in the SRS.
+  Implement FR-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Machine-readable catalogues.
@@ -177,7 +177,7 @@
   FR-6: Schema / field metadata
 
 - **Problem Statement:**  
-  Implement FR-6 as specified in the SRS.
+  Implement FR-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Schema / field metadata.
@@ -206,7 +206,7 @@
   FR-7: Provenance metadata
 
 - **Problem Statement:**  
-  Implement FR-7 as specified in the SRS.
+  Implement FR-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Provenance metadata.
@@ -233,7 +233,7 @@
   FR-8: Provenance display
 
 - **Problem Statement:**  
-  Implement FR-8 as specified in the SRS.
+  Implement FR-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Provenance display.
@@ -261,7 +261,7 @@
   FR-9: Court Terms of Use compliance notice
 
 - **Problem Statement:**  
-  Implement FR-9 as specified in the SRS.
+  Implement FR-9 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Court Terms of Use compliance notice.
@@ -289,7 +289,7 @@
   FR-10: Automatic provenance logging for automated ingestion
 
 - **Problem Statement:**  
-  Implement FR-10 as specified in the SRS.
+  Implement FR-10 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Automatic provenance logging for automated ingestion.
@@ -317,7 +317,7 @@
   FR-10A: Bronze/Silver/Gold storage lineage
 
 - **Problem Statement:**  
-  Implement FR-10A as specified in the SRS.
+  Implement FR-10A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Bronze/Silver/Gold storage lineage.
@@ -351,7 +351,7 @@
   FR-11: Community dataset submissions
 
 - **Problem Statement:**  
-  Implement FR-11 as specified in the SRS.
+  Implement FR-11 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can submit new datasets or resources (including links and visualizations)..
@@ -380,7 +380,7 @@
   FR-12: Community visualization submissions
 
 - **Problem Statement:**  
-  Implement FR-12 as specified in the SRS.
+  Implement FR-12 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can submit embedded visualizations (excluding Power BI) as resources..
@@ -409,7 +409,7 @@
   FR-13: AI-assisted review
 
 - **Problem Statement:**  
-  Implement FR-13 as specified in the SRS.
+  Implement FR-13 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can AI-assisted review.
@@ -438,7 +438,7 @@
   FR-14: Human moderation
 
 - **Problem Statement:**  
-  Implement FR-14 as specified in the SRS.
+  Implement FR-14 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a moderator, I can see submission details, AI review report, submission history, and user identity..
@@ -468,7 +468,7 @@
   FR-15: Badges and review indicators
 
 - **Problem Statement:**  
-  Implement FR-15 as specified in the SRS.
+  Implement FR-15 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can Badges and review indicators.
@@ -497,7 +497,7 @@
   FR-16: Takedown request handling
 
 - **Problem Statement:**  
-  Implement FR-16 as specified in the SRS.
+  Implement FR-16 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a moderator, I can Takedown request handling.
@@ -525,7 +525,7 @@
   FR-17: Visualization linkage
 
 - **Problem Statement:**  
-  Implement FR-17 as specified in the SRS.
+  Implement FR-17 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Visualization linkage.
@@ -554,7 +554,7 @@
   FR-18: Local dev environment
 
 - **Problem Statement:**  
-  Implement FR-18 as specified in the SRS.
+  Implement FR-18 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a developer, I can Local dev environment.
@@ -584,7 +584,7 @@
   FR-19: Staging and production environments
 
 - **Problem Statement:**  
-  Implement FR-19 as specified in the SRS.
+  Implement FR-19 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Staging and production environments.
@@ -612,7 +612,7 @@
   FR-20: National Court Discovery as a Registry and Verification Pipeline
 
 - **Problem Statement:**  
-  Implement FR-20 as specified in the SRS.
+  Implement FR-20 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an admin, I can National Court Discovery as a Registry and Verification Pipeline.
@@ -664,7 +664,7 @@
   FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts
 
 - **Problem Statement:**  
-  Implement FR-21 as specified in the SRS.
+  Implement FR-21 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts.
@@ -700,7 +700,7 @@
   FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution
 
 - **Problem Statement:**  
-  Implement FR-22 as specified in the SRS.
+  Implement FR-22 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Court Registry Duplicate Detection and Canonical Identity Resolution.
@@ -734,7 +734,7 @@
   DG-1: Public, non-confidential data
 
 - **Problem Statement:**  
-  Implement DG-1 as specified in the SRS.
+  Implement DG-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Public, non-confidential data.
@@ -762,7 +762,7 @@
   DG-2: Minimal PII
 
 - **Problem Statement:**  
-  Implement DG-2 as specified in the SRS.
+  Implement DG-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Minimal PII.
@@ -790,7 +790,7 @@
   DG-3: Clear distinction between official and derived data
 
 - **Problem Statement:**  
-  Implement DG-3 as specified in the SRS.
+  Implement DG-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Clear distinction between official and derived data.
@@ -818,7 +818,7 @@
   DG-4: Contributor terms
 
 - **Problem Statement:**  
-  Implement DG-4 as specified in the SRS.
+  Implement DG-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can Contributor terms.
@@ -847,7 +847,7 @@
   DG-5: Provenance requirement
 
 - **Problem Statement:**  
-  Implement DG-5 as specified in the SRS.
+  Implement DG-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Provenance requirement.
@@ -875,7 +875,7 @@
   DG-6: Auditability
 
 - **Problem Statement:**  
-  Implement DG-6 as specified in the SRS.
+  Implement DG-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Auditability.
@@ -903,7 +903,7 @@
   DG-7: Takedown workflow
 
 - **Problem Statement:**  
-  Implement DG-7 as specified in the SRS.
+  Implement DG-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Takedown workflow.
@@ -931,7 +931,7 @@
   DG-8: Corrections and annotations
 
 - **Problem Statement:**  
-  Implement DG-8 as specified in the SRS.
+  Implement DG-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Corrections and annotations.
@@ -959,7 +959,7 @@
   GC-1: Public governance decision log
 
 - **Problem Statement:**  
-  Implement GC-1 as specified in the SRS.
+  Implement GC-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Public governance decision log.
@@ -987,7 +987,7 @@
   GC-2: Truthiness evaluation metadata
 
 - **Problem Statement:**  
-  Implement GC-2 as specified in the SRS.
+  Implement GC-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Truthiness evaluation metadata.
@@ -1018,7 +1018,7 @@
   GC-3: Community challenge and re-evaluation workflow
 
 - **Problem Statement:**  
-  Implement GC-3 as specified in the SRS.
+  Implement GC-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a moderator, I can Community challenge and re-evaluation workflow.
@@ -1046,7 +1046,7 @@
   GC-4: Public moderation outcomes (with safe redactions)
 
 - **Problem Statement:**  
-  Implement GC-4 as specified in the SRS.
+  Implement GC-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Public moderation outcomes (with safe redactions).
@@ -1074,7 +1074,7 @@
   GC-5: Low-friction participation
 
 - **Problem Statement:**  
-  Implement GC-5 as specified in the SRS.
+  Implement GC-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can Low-friction participation.
@@ -1102,7 +1102,7 @@
   GC-6: Independence and “bus factor” resilience
 
 - **Problem Statement:**  
-  Implement GC-6 as specified in the SRS.
+  Implement GC-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an admin, I can Independence and “bus factor” resilience.
@@ -1131,7 +1131,7 @@
   GC-7: Annual review publication
 
 - **Problem Statement:**  
-  Implement GC-7 as specified in the SRS.
+  Implement GC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Annual review publication.
@@ -1162,7 +1162,7 @@
   GC-8: AI self-identification and labeling
 
 - **Problem Statement:**  
-  Implement GC-8 as specified in the SRS.
+  Implement GC-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can AI self-identification and labeling.
@@ -1191,7 +1191,7 @@
   GC-9: National Court Discovery as a Registry and Verification Pipeline
 
 - **Problem Statement:**  
-  Implement GC-9 as specified in the SRS.
+  Implement GC-9 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a maintainer, I can produce a public, reviewable change log and periodic audit artifacts (e.g., diffs/reports) showing registry additions, removals, merges/splits, URL changes, and verification status changes..
@@ -1223,7 +1223,7 @@
   GC-10: CKAN Bootstrap and Registry Sync Auditability
 
 - **Problem Statement:**  
-  Implement GC-10 as specified in the SRS.
+  Implement GC-10 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can CKAN Bootstrap and Registry Sync Auditability.
@@ -1252,7 +1252,7 @@
   SEC-1: Roles and permissions
 
 - **Problem Statement:**  
-  Implement SEC-1 as specified in the SRS.
+  Implement SEC-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can Roles and permissions.
@@ -1281,7 +1281,7 @@
   SEC-2: Authentication
 
 - **Problem Statement:**  
-  Implement SEC-2 as specified in the SRS.
+  Implement SEC-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a contributor, I can Authentication.
@@ -1310,7 +1310,7 @@
   SEC-3: Encryption
 
 - **Problem Statement:**  
-  Implement SEC-3 as specified in the SRS.
+  Implement SEC-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Encryption.
@@ -1339,7 +1339,7 @@
   SEC-4: Network controls
 
 - **Problem Statement:**  
-  Implement SEC-4 as specified in the SRS.
+  Implement SEC-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Network controls.
@@ -1368,7 +1368,7 @@
   SEC-5: Secret management
 
 - **Problem Statement:**  
-  Implement SEC-5 as specified in the SRS.
+  Implement SEC-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Secret management.
@@ -1399,7 +1399,7 @@
   SEC-6: Input validation & sanitization
 
 - **Problem Statement:**  
-  Implement SEC-6 as specified in the SRS.
+  Implement SEC-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Input validation & sanitization.
@@ -1429,7 +1429,7 @@
   SEC-7: Dependency management
 
 - **Problem Statement:**  
-  Implement SEC-7 as specified in the SRS.
+  Implement SEC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Dependency management.
@@ -1458,7 +1458,7 @@
   SEC-8: Logging & anomaly detection
 
 - **Problem Statement:**  
-  Implement SEC-8 as specified in the SRS.
+  Implement SEC-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Logging & anomaly detection.
@@ -1488,7 +1488,7 @@
   MON-1: Uptime and health checks
 
 - **Problem Statement:**  
-  Implement MON-1 as specified in the SRS.
+  Implement MON-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Uptime and health checks.
@@ -1518,7 +1518,7 @@
   MON-2: Resource monitoring
 
 - **Problem Statement:**  
-  Implement MON-2 as specified in the SRS.
+  Implement MON-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Resource monitoring.
@@ -1548,7 +1548,7 @@
   MON-3: Centralized logging
 
 - **Problem Statement:**  
-  Implement MON-3 as specified in the SRS.
+  Implement MON-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Centralized logging.
@@ -1577,7 +1577,7 @@
   DR-1: Regular backups
 
 - **Problem Statement:**  
-  Implement DR-1 as specified in the SRS.
+  Implement DR-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Regular backups.
@@ -1607,7 +1607,7 @@
   DR-2: Restore testing
 
 - **Problem Statement:**  
-  Implement DR-2 as specified in the SRS.
+  Implement DR-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Restore testing.
@@ -1634,7 +1634,7 @@
   DR-3: Infrastructure rebuild
 
 - **Problem Statement:**  
-  Implement DR-3 as specified in the SRS.
+  Implement DR-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Infrastructure rebuild.
@@ -1661,7 +1661,7 @@
   INF-1: Terraform-managed resources
 
 - **Problem Statement:**  
-  Implement INF-1 as specified in the SRS.
+  Implement INF-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Terraform-managed resources.
@@ -1688,7 +1688,7 @@
   INF-2: Git-based workflows
 
 - **Problem Statement:**  
-  Implement INF-2 as specified in the SRS.
+  Implement INF-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Git-based workflows.
@@ -1716,7 +1716,7 @@
   INF-3: Automated deployment
 
 - **Problem Statement:**  
-  Implement INF-3 as specified in the SRS.
+  Implement INF-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Automated deployment.
@@ -1743,7 +1743,7 @@
   INF-3A: Data pipeline configuration in GitHub
 
 - **Problem Statement:**  
-  Implement INF-3A as specified in the SRS.
+  Implement INF-3A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Data pipeline configuration in GitHub.
@@ -1771,7 +1771,7 @@
   INF-4: Local environment parity
 
 - **Problem Statement:**  
-  Implement INF-4 as specified in the SRS.
+  Implement INF-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a developer, I can Local environment parity.
@@ -1799,7 +1799,7 @@
   NFR-1: Availability
 
 - **Problem Statement:**  
-  Implement NFR-1 as specified in the SRS.
+  Implement NFR-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Availability.
@@ -1828,7 +1828,7 @@
   NFR-2: Performance
 
 - **Problem Statement:**  
-  Implement NFR-2 as specified in the SRS.
+  Implement NFR-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Performance.
@@ -1857,7 +1857,7 @@
   NFR-3: Usability
 
 - **Problem Statement:**  
-  Implement NFR-3 as specified in the SRS.
+  Implement NFR-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Usability.
@@ -1887,7 +1887,7 @@
   NFR-4: Accessibility
 
 - **Problem Statement:**  
-  Implement NFR-4 as specified in the SRS.
+  Implement NFR-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Accessibility.
@@ -1915,7 +1915,7 @@
   NFR-5: Transparency & trust
 
 - **Problem Statement:**  
-  Implement NFR-5 as specified in the SRS.
+  Implement NFR-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As a user, I can Transparency & trust.
@@ -1943,7 +1943,7 @@
   NFR-6: Court Record Custody and Source Preservation Policy
 
 - **Problem Statement:**  
-  Implement NFR-6 as specified in the SRS.
+  Implement NFR-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can Court Record Custody and Source Preservation Policy.
@@ -1979,7 +1979,7 @@
   Nice to Have: MCP tools to manage and query the data resources.
 
 - **Problem Statement:**  
-  Implement the Nice to Have item as described in the SRS.
+  Implement the Nice to Have item as described in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
   - As an AI agent, I can MCP tools to manage and query the data resources.

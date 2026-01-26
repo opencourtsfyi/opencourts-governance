@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, List, Optional
@@ -292,12 +293,12 @@ def format_entry(feature_name: str, problem: str, user_stories: List[str], accep
     )
 
 
-def requirements_to_entries(requirements: List[Requirement], nice_to_have: List[str]) -> str:
+def requirements_to_entries(requirements: List[Requirement], nice_to_have: List[str], *, srs_source_line: str) -> str:
     out_parts: List[str] = []
 
     for req in requirements:
         feature_name = f"{req.req_id}: {req.title}"
-        problem = f"Implement {req.req_id} as specified in the SRS."  # conservative; avoids adding behavior
+        problem = f"Implement {req.req_id} as specified in the SRS. {srs_source_line}"  # conservative; avoids adding behavior
         user_stories = user_stories_for(req)
 
         # Acceptance criteria is the requirement's bullet list; if empty, restate the title.
@@ -312,7 +313,7 @@ def requirements_to_entries(requirements: List[Requirement], nice_to_have: List[
 
     for nh in nice_to_have:
         feature_name = f"Nice to Have: {nh}"
-        problem = "Implement the Nice to Have item as described in the SRS."
+        problem = f"Implement the Nice to Have item as described in the SRS. {srs_source_line}"
         user_stories = [f"As an AI agent, I can {nh}.".rstrip(".") + "."]
         acceptance = [nh]
         deps = ["Web portal and API layer"]
@@ -324,14 +325,71 @@ def requirements_to_entries(requirements: List[Requirement], nice_to_have: List[
     return "\n\n".join(out_parts).strip() + "\n"
 
 
+def _run_git(args: List[str]) -> Optional[str]:
+    try:
+        completed = subprocess.run(
+            ["git", *args],
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
+        return completed.stdout.strip()
+    except Exception:
+        return None
+
+
+def _git_cat_file_at_ref(ref: str, path: str) -> str:
+    content = _run_git(["show", f"{ref}:{path}"])
+    if content is None:
+        raise SystemExit(
+            f"Unable to read {path} from git ref '{ref}'. "
+            "Ensure the ref exists locally (e.g., 'main') and the file is committed on that branch."
+        )
+    return content
+
+
+def _git_commit_for_ref(ref: str) -> str:
+    commit = _run_git(["rev-parse", ref])
+    if commit is None:
+        raise SystemExit(f"Unable to resolve git ref '{ref}'.")
+    return commit
+
+
+def _git_blob_for_path_at_ref(ref: str, path: str) -> str:
+    blob = _run_git(["rev-parse", f"{ref}:{path}"])
+    if blob is None:
+        raise SystemExit(f"Unable to resolve blob for {path} at ref '{ref}'.")
+    return blob
+
+
+def _build_srs_source_line(srs_ref: str, srs_path: str) -> str:
+    """Return a stable, git-based reference to the exact SRS content used.
+
+    This intentionally references a committed version on the provided ref (default: main)
+    to avoid linking to uncommitted/dirty working tree content.
+    """
+
+    commit = _git_commit_for_ref(srs_ref)
+    blob = _git_blob_for_path_at_ref(srs_ref, srs_path)
+    return f"SRS source: {srs_path} @ {commit} (blob {blob})."
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--srs", type=Path, default=Path("design/software-requirements-specification.md"))
+    parser.add_argument(
+        "--srs-ref",
+        default="main",
+        help="Git ref to read the SRS from (default: main). Ensures SDD links to a version-controlled SRS.",
+    )
     parser.add_argument("--out", type=Path, default=Path("design/software-design-document.md"))
     parser.add_argument("--check-only", action="store_true")
     args = parser.parse_args()
 
-    srs_text = args.srs.read_text(encoding="utf-8")
+    srs_path_str = args.srs.as_posix()
+    srs_text = _git_cat_file_at_ref(args.srs_ref, srs_path_str)
     requirements = parse_requirements(srs_text)
     nice_to_have = find_nice_to_have(srs_text)
 
@@ -344,10 +402,14 @@ def main() -> int:
     if dupes:
         raise SystemExit(f"Duplicate requirement IDs found: {dupes}")
 
-    output = requirements_to_entries(requirements, nice_to_have)
+    srs_source_line = _build_srs_source_line(args.srs_ref, srs_path_str)
+    output = requirements_to_entries(requirements, nice_to_have, srs_source_line=srs_source_line)
 
     if args.check_only:
-        print(f"Parsed {len(requirements)} requirements; {len(nice_to_have)} nice-to-have bullets.")
+        print(
+            f"Parsed {len(requirements)} requirements; {len(nice_to_have)} nice-to-have bullets. "
+            f"Using {srs_source_line}"
+        )
         return 0
 
     args.out.write_text(output, encoding="utf-8")
