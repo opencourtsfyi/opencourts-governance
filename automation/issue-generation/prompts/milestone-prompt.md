@@ -1,0 +1,1 @@
+You are a technical program manager. Suggest a series of milestones to organize the software development process into ordered by priority. Include in each milestone a set of acceptance criteria for the completion of the milestone. Output the milestones in markdown format
