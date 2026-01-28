@@ -1,0 +1,701 @@
+{
+  "project_url": "https://github.com/orgs/opencourtsfyi/projects/1",
+  "owner": "opencourtsfyi",
+  "project_number": 1,
+  "dry_run": false,
+  "created_issues_report": "C:\\Users\\dwcar\\repos\\opencourts-governance\\automation\\issue-generation\\out\\created_issues_report.json",
+  "totals": {
+    "processed": 76,
+    "added": 0,
+    "updated_issues": 76,
+    "updated_project_items": 0,
+    "skipped": 0,
+    "failed": 0
+  },
+  "results": [
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/1",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-1: Create and manage datasets",
+      "item": null,
+      "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/10",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-11: Community dataset submissions",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/11",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-12: Community visualization submissions",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/12",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-13: AI-assisted review",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/13",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-14: Human moderation",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/14",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-15: Badges and review indicators",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/15",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-16: Takedown request handling",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/16",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-17: Visualization linkage",
+      "item": null,
+      "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/17",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-18: Local dev environment",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/18",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-19: Staging and production environments",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/19",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts — Part 1/2",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/2",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-2: Dataset versions",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/20",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts — Part 2/2",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/21",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-1: Public, non-confidential data",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/22",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-2: Minimal PII",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/23",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-3: Clear distinction between official and derived data",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/24",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-4: Contributor terms",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/25",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-5: Provenance requirement",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/26",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-6: Auditability",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/27",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-8: Corrections and annotations",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/28",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-2: Truthiness evaluation metadata",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/29",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-3: Community challenge and re-evaluation workflow",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/3",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-3: Dataset search and discovery",
+      "item": null,
+      "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/30",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-4: Public moderation outcomes (with safe redactions)",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/31",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-5: Low-friction participation",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/32",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-8: AI self-identification and labeling",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/33",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-10: CKAN Bootstrap and Registry Sync Auditability",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/34",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "SEC-1: Roles and permissions",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/35",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "SEC-2: Authentication",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/36",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "SEC-6: Input validation & sanitization",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/37",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-1: Availability",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/38",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-2: Performance",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/39",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-3: Usability",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/4",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-4: CSV and JSON access",
+      "item": null,
+      "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/40",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-4: Accessibility",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/41",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-5: Transparency & trust",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/5",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-5: Machine-readable catalogues",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/6",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-6: Schema / field metadata",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/7",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-7: Provenance metadata",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/8",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-8: Provenance display",
+      "item": null,
+      "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/9",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-9: Court Terms of Use compliance notice",
+      "item": null,
+      "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/1",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-2A: Update / recrawl metadata",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/10",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution — Part 1/2",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/11",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution — Part 2/2",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/12",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "GC-9: National Court Discovery as a Registry and Verification Pipeline",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/13",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "NFR-6: Court Record Custody and Source Preservation Policy — Part 1/2",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/14",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "NFR-6: Court Record Custody and Source Preservation Policy — Part 2/2",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/2",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-10: Automatic provenance logging for automated ingestion",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/3",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-10A: Bronze/Silver/Gold storage lineage — Part 1/2",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/4",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-10A: Bronze/Silver/Gold storage lineage — Part 2/2",
+      "item": null,
+      "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/5",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 1/5",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/6",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 2/5",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/7",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 3/5",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/8",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 4/5",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/9",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 5/5",
+      "item": null,
+      "milestone": "Milestone 2: National Court Registry & State Seeding",
+      "activity_type": "Software Development"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/1",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "DG-7: Takedown workflow",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Outreach"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/2",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "GC-1: Public governance decision log",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Outreach"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/3",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "GC-6: Independence and “bus factor” resilience",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Outreach"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/4",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "GC-7: Annual review publication",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "Outreach"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/5",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "Nice to Have: MCP tools to manage and query the data resources.",
+      "item": null,
+      "milestone": "Milestone 5: Community Governance & AI Review",
+      "activity_type": "Outreach"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/1",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-3: Encryption",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/10",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "DR-2: Restore testing",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/11",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "DR-3: Infrastructure rebuild",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/12",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-1: Terraform-managed resources",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/13",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-2: Git-based workflows",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/14",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-3: Automated deployment",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/15",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-3A: Data pipeline configuration in GitHub",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/16",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-4: Local environment parity",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/2",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-4: Network controls",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/3",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-5: Secret management",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/4",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-7: Dependency management",
+      "item": null,
+      "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/5",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-8: Logging & anomaly detection",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/6",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "MON-1: Uptime and health checks",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/7",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "MON-2: Resource monitoring",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/8",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "MON-3: Centralized logging",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    },
+    {
+      "action": "ok",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/9",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "DR-1: Regular backups",
+      "item": null,
+      "milestone": "Milestone 6: Reliability & Long-term Operations",
+      "activity_type": "DevOps"
+    }
+  ]
+}
