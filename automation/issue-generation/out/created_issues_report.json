@@ -1,0 +1,474 @@
+{
+  "owner": "opencourtsfyi",
+  "issues_json": "C:\\Users\\dwcar\\repos\\opencourts-governance\\automation\\issue-generation\\out\\issues.json",
+  "ensure_milestones": true,
+  "ensure_labels": true,
+  "skip_if_exists": true,
+  "dry_run": false,
+  "limit": 0,
+  "totals": {
+    "processed": 76,
+    "created": 75,
+    "skipped": 1,
+    "failed": 0
+  },
+  "results": [
+    {
+      "action": "skipped",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-1: Create and manage datasets",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/1",
+      "number": 1
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-2: Dataset versions",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/2"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-2A: Update / recrawl metadata",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/1"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-3: Dataset search and discovery",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/3"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-4: CSV and JSON access",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/4"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-5: Machine-readable catalogues",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/5"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-6: Schema / field metadata",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/6"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-7: Provenance metadata",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/7"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-8: Provenance display",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/8"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-9: Court Terms of Use compliance notice",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/9"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-10: Automatic provenance logging for automated ingestion",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/2"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-10A: Bronze/Silver/Gold storage lineage — Part 1/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/3"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-10A: Bronze/Silver/Gold storage lineage — Part 2/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/4"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-11: Community dataset submissions",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/10"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-12: Community visualization submissions",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/11"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-13: AI-assisted review",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/12"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-14: Human moderation",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/13"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-15: Badges and review indicators",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/14"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-16: Takedown request handling",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/15"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-17: Visualization linkage",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/16"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-18: Local dev environment",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/17"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-19: Staging and production environments",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/18"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 1/5",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/5"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 2/5",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/6"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 3/5",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/7"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 4/5",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/8"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 5/5",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/9"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts — Part 1/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/19"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts — Part 2/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/20"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution — Part 1/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/10"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution — Part 2/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/11"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-1: Public, non-confidential data",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/21"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-2: Minimal PII",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/22"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-3: Clear distinction between official and derived data",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/23"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-4: Contributor terms",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/24"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-5: Provenance requirement",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/25"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-6: Auditability",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/26"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "DG-7: Takedown workflow",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/1"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "DG-8: Corrections and annotations",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/27"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "GC-1: Public governance decision log",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/2"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-2: Truthiness evaluation metadata",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/28"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-3: Community challenge and re-evaluation workflow",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/29"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-4: Public moderation outcomes (with safe redactions)",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/30"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-5: Low-friction participation",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/31"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "GC-6: Independence and “bus factor” resilience",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/3"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "GC-7: Annual review publication",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/4"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-8: AI self-identification and labeling",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/32"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "GC-9: National Court Discovery as a Registry and Verification Pipeline",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/12"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "GC-10: CKAN Bootstrap and Registry Sync Auditability",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/33"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "SEC-1: Roles and permissions",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/34"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "SEC-2: Authentication",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/35"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-3: Encryption",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/1"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-4: Network controls",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/2"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-5: Secret management",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/3"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "SEC-6: Input validation & sanitization",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/36"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-7: Dependency management",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/4"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "SEC-8: Logging & anomaly detection",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/5"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "MON-1: Uptime and health checks",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/6"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "MON-2: Resource monitoring",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/7"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "MON-3: Centralized logging",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/8"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "DR-1: Regular backups",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/9"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "DR-2: Restore testing",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/10"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "DR-3: Infrastructure rebuild",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/11"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-1: Terraform-managed resources",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/12"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-2: Git-based workflows",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/13"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-3: Automated deployment",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/14"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-3A: Data pipeline configuration in GitHub",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/15"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-infra",
+      "title": "INF-4: Local environment parity",
+      "url": "https://github.com/opencourtsfyi/opencourts-infra/issues/16"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-1: Availability",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/37"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-2: Performance",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/38"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-3: Usability",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/39"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-4: Accessibility",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/40"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-ckan",
+      "title": "NFR-5: Transparency & trust",
+      "url": "https://github.com/opencourtsfyi/opencourts-ckan/issues/41"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "NFR-6: Court Record Custody and Source Preservation Policy — Part 1/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/13"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-etl",
+      "title": "NFR-6: Court Record Custody and Source Preservation Policy — Part 2/2",
+      "url": "https://github.com/opencourtsfyi/opencourts-etl/issues/14"
+    },
+    {
+      "action": "created",
+      "repo": "opencourtsfyi/opencourts-governance",
+      "title": "Nice to Have: MCP tools to manage and query the data resources.",
+      "url": "https://github.com/opencourtsfyi/opencourts-governance/issues/5"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+You are assisting with the OpenCourts.fyi project. Your task is to read four local files:
+
+1. software-design-document.md  
+2. software-requirements-specification.md  
+3. project-milestones.md  
+4. volunteer-activity-categories.md  
+
+You will then generate a complete set of GitHub issues that, when implemented, will produce an MVP that satisfies every requirement in the software-requirements-specification.md.
+
+Your output must follow these rules:
+
+----------------------------------------------------------------------
+SECTION 1 — INPUT INTERPRETATION RULES
+----------------------------------------------------------------------
+
+1. Read all four files carefully before generating any issues.
+2. Treat the SRS as the source of truth for required functionality.
+3. Treat the SDD as the source of truth for system design and task structure.
+4. Treat project-milestones.md as the authoritative list of Milestones.
+5. Treat volunteer-activity-categories.md as the authoritative list of Activity Types.
+6. Do NOT invent features, requirements, or repositories.
+7. Do NOT merge or reinterpret requirements. Translate them exactly.
+
+----------------------------------------------------------------------
+SECTION 2 — ISSUE GENERATION RULES
+----------------------------------------------------------------------
+
+For each SDD entry, generate a set of small, atomic, volunteer-friendly issues.
+
+Each issue must:
+
+1. Be implementable in 2–6 hours by volunteers with varying technical experience.
+2. Be routed to one of the official OpenCourts.fyi repositories:
+   - opencourts-infra
+   - opencourts-etl
+   - opencourts-ckan
+   - opencourts-mock-website
+   - opencourts-governance
+
+3. Include the following fields:
+
+- **Title:**  
+  A short, actionable description of the task.
+
+- **Body:**  
+  Must include:
+  - The SDD Feature Name  
+  - The Problem Statement  
+  - The specific task to be completed  
+  - Acceptance Criteria (required)  
+  - Any Dependencies listed in the SDD  
+
+- **Repository:**  
+  One of the five OpenCourts.fyi repos, chosen strictly according to the SDD’s Target Repository field.
+
+- **Milestone:**  
+  One value from project-milestones.md.  
+  Do NOT invent or modify milestone names.
+
+- **Activity Type:**  
+  One value from volunteer-activity-categories.md.  
+  Do NOT invent or modify activity types.
+
+- **Labels:**  
+  Use only the labels listed in the SDD entry.
+
+- **Priority:**  
+  Copy the priority from the SDD entry.
+
+4. Issues must be written in a structured, machine-readable JSON array.
+
+----------------------------------------------------------------------
+SECTION 3 — ACCEPTANCE CRITERIA RULES
+----------------------------------------------------------------------
+
+Every issue MUST include Acceptance Criteria that are:
+
+- Testable  
+- Unambiguous  
+- Derived strictly from the SRS and SDD  
+- Free of assumptions or invented behaviors  
+
+Acceptance Criteria must be written as bullet points beginning with “- [ ]”.
+
+----------------------------------------------------------------------
+SECTION 4 — OUTPUT FORMAT
+----------------------------------------------------------------------
+
+Output a single JSON array.  
+Each element must be a GitHub issue object with the following fields:
+
+{
+  "title": "...",
+  "body": "...",
+  "repo": "...",
+  "milestone": "...",
+  "activity_type": "...",
+  "labels": [...],
+  "priority": "High | Medium | Low"
+}
+
+Do NOT include commentary outside the JSON.
+
+----------------------------------------------------------------------
+SECTION 5 — EXECUTION
+----------------------------------------------------------------------
+
+1. Read the four local files.  
+2. Extract all requirements, design elements, milestones, and activity types.  
+3. Generate a complete set of issues that, when implemented, will produce an MVP that satisfies the SRS.  
+4. Ensure full coverage: every SRS requirement must map to at least one issue.  
+5. Ensure no hallucination: do not add features, repos, or categories not present in the files.

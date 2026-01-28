@@ -1,0 +1,909 @@
+[
+  {
+    "title": "FR-1: Create and manage datasets",
+    "body": "SDD Feature Name: FR-1: Create and manage datasets\nSRS Requirement: FR-1\n\nProblem Statement:\nImplement FR-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Authorized users can create datasets with title, description, tags, jurisdiction (state, county), court level.\n- [ ] Source information (URLs, institution names).\n- [ ] Provenance metadata (see Section 4).\n- [ ] Upload of structured data files (CSV, JSON, XLSX) and documentation files (PDF, MD, HTML, etc.).\n- [ ] Linking to remote resources (e.g., files on court websites, APIs, or data lakes).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-2: Dataset versions",
+    "body": "SDD Feature Name: FR-2: Dataset versions\nSRS Requirement: FR-2\n\nProblem Statement:\nImplement FR-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Support for dataset versioning (or equivalent metadata) when datasets are updated or re-ingested.\n- [ ] Users can see when a dataset was last updated and, where possible, what changed.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-2A: Update / recrawl metadata",
+    "body": "SDD Feature Name: FR-2A: Update / recrawl metadata\nSRS Requirement: FR-2A\n\nProblem Statement:\nImplement FR-2A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall support recording per-dataset update/recrawl metadata including min_recrawl_interval_seconds.\n- [ ] Automated ingestion pipelines and schedulers shall respect min_recrawl_interval_seconds for a dataset’s configured source(s) and shall not recrawl more frequently than the specified minimum.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-3: Dataset search and discovery",
+    "body": "SDD Feature Name: FR-3: Dataset search and discovery\nSRS Requirement: FR-3\n\nProblem Statement:\nImplement FR-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Users can search datasets by keywords, tags, jurisdiction, date ranges, court type, data type.\n- [ ] Users can filter datasets using facets (state, county, court level, topic, reviewed/unreviewed).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-4: CSV and JSON access",
+    "body": "SDD Feature Name: FR-4: CSV and JSON access\nSRS Requirement: FR-4\n\nProblem Statement:\nImplement FR-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Endpoints that return CSV and JSON formatted data for each dataset (or selected resources).\n- [ ] Support for pagination and basic query/filter parameters where feasible.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-5: Machine-readable catalogues",
+    "body": "SDD Feature Name: FR-5: Machine-readable catalogues\nSRS Requirement: FR-5\n\nProblem Statement:\nImplement FR-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Expose machine-readable catalogues (e.g., DCAT-style or CKAN API endpoints) that list datasets, resources (files, APIs), and metadata (schemas, field descriptions, provenance fields).\n- [ ] Catalogues accessible to automated tools and AI agents without requiring authentication for public datasets.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-6: Schema / field metadata",
+    "body": "SDD Feature Name: FR-6: Schema / field metadata\nSRS Requirement: FR-6\n\nProblem Statement:\nImplement FR-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Allow maintainers to document field-level metadata (name, description, type, allowed values) for key datasets.\n- [ ] Field metadata accessible via UI and API for machine consumption.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-7: Provenance metadata",
+    "body": "SDD Feature Name: FR-7: Provenance metadata\nSRS Requirement: FR-7\n\nProblem Statement:\nImplement FR-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] For each dataset derived from court sources, store at minimum: source URLs, source institution, date/time retrieved, file hash, description of transformations, terms of use or policy reference.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-8: Provenance display",
+    "body": "SDD Feature Name: FR-8: Provenance display\nSRS Requirement: FR-8\n\nProblem Statement:\nImplement FR-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Display a human-readable provenance summary on each dataset page.\n- [ ] Provenance metadata accessible via API for machine use.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-9: Court Terms of Use compliance notice",
+    "body": "SDD Feature Name: FR-9: Court Terms of Use compliance notice\nSRS Requirement: FR-9\n\nProblem Statement:\nImplement FR-9 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Indicate the relevant court Terms of Use on each dataset page.\n- [ ] Include a short statement that data is derived from court sources and not an official record.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-10: Automatic provenance logging for automated ingestion",
+    "body": "SDD Feature Name: FR-10: Automatic provenance logging for automated ingestion\nSRS Requirement: FR-10\n\nProblem Statement:\nImplement FR-10 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Ingest pipelines (e.g., serverless functions) automatically record source URLs, retrieval timestamps, file hashes, pipeline name/version.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-10A: Bronze/Silver/Gold storage lineage — Part 1/2",
+    "body": "SDD Feature Name: FR-10A: Bronze/Silver/Gold storage lineage\nSRS Requirement: FR-10A\n\nProblem Statement:\nImplement FR-10A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 1/2).\n\nAcceptance Criteria:\n- [ ] Automated ingestion pipelines shall support a medallion-style storage model with distinct stages for:\n- [ ] Bronze (ingest): raw ingested data preserved in its original format(s).\n- [ ] Silver (transform): cleaned/standardized datasets stored in Parquet format.\n- [ ] Gold (publish): publication-ready datasets stored in Parquet format and optionally rendered/exported as CSV and JSON.\n- [ ] For each published (gold) dataset/resource, the system shall record lineage that links the gold artifact(s) back to the specific silver artifact(s) and bronze artifact(s) from which they were produced.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-10A: Bronze/Silver/Gold storage lineage — Part 2/2",
+    "body": "SDD Feature Name: FR-10A: Bronze/Silver/Gold storage lineage\nSRS Requirement: FR-10A\n\nProblem Statement:\nImplement FR-10A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 2/2).\n\nAcceptance Criteria:\n- [ ] Lineage records shall include, at minimum: storage location(s) (container/path or equivalent), file hash(es) for each stage artifact, timestamps, and the pipeline run identifier and pipeline name/version that produced each transformation.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-11: Community dataset submissions",
+    "body": "SDD Feature Name: FR-11: Community dataset submissions\nSRS Requirement: FR-11\n\nProblem Statement:\nImplement FR-11 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Registered community contributors can submit new datasets or resources (including links and visualizations).\n- [ ] Submissions enter a pending or draft state and are not publicly visible until approved.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Visualization layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-12: Community visualization submissions",
+    "body": "SDD Feature Name: FR-12: Community visualization submissions\nSRS Requirement: FR-12\n\nProblem Statement:\nImplement FR-12 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Contributors can submit embedded visualizations (excluding Power BI) as resources.\n- [ ] Contributors must provide title, description, tags, source dataset(s) and links, and description of methodology.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Visualization layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-13: AI-assisted review",
+    "body": "SDD Feature Name: FR-13: AI-assisted review\nSRS Requirement: FR-13\n\nProblem Statement:\nImplement FR-13 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] On submission, the system triggers an AI review process that checks for presence and quality of provenance metadata, flags potential violations of court Terms of Use and portal policies, flags potential PII or sensitive content, and assesses metadata completeness and clarity.\n- [ ] The AI review produces a structured report (scores, flags, recommended actions) stored with the submission.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-14: Human moderation",
+    "body": "SDD Feature Name: FR-14: Human moderation\nSRS Requirement: FR-14\n\nProblem Statement:\nImplement FR-14 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] A human moderator is required to approve, reject, or request changes on each community submission.\n- [ ] Moderators see submission details, AI review report, submission history, and user identity.\n- [ ] Only moderators (or higher) can change a submission from pending to published.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-15: Badges and review indicators",
+    "body": "SDD Feature Name: FR-15: Badges and review indicators\nSRS Requirement: FR-15\n\nProblem Statement:\nImplement FR-15 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system provides visible indicators on datasets: whether they have been AI-reviewed, human-reviewed/approved, and whether provenance has been verified.\n- [ ] Badges are driven from internal metadata fields and not directly editable by contributors.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-16: Takedown request handling",
+    "body": "SDD Feature Name: FR-16: Takedown request handling\nSRS Requirement: FR-16\n\nProblem Statement:\nImplement FR-16 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system provides a public takedown request mechanism (e.g., form or contact) that allows requesters to identify datasets or resources and state reasons (e.g., PII, legal risk, errors).\n- [ ] Moderators have a workflow to temporarily hide datasets/resources, review and decide on takedown, and document resolution (e.g., remove, redact, reject request).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-17: Visualization linkage",
+    "body": "SDD Feature Name: FR-17: Visualization linkage\nSRS Requirement: FR-17\n\nProblem Statement:\nImplement FR-17 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Each embedded visualization shall be associated with one or more underlying datasets in the catalog.\n- [ ] Clear indication of whether the visualization is official or community-contributed.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Visualization layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 3: Discovery Portal & Dataset Management",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-18: Local dev environment",
+    "body": "SDD Feature Name: FR-18: Local dev environment\nSRS Requirement: FR-18\n\nProblem Statement:\nImplement FR-18 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall be runnable locally on developer machines with containerized services (e.g., Docker Compose) or documented setup scripts.\n- [ ] Local instances of portal (CKAN or equivalent), database, minimal storage.\n- [ ] Developers can create test datasets, test AI review integration using mocked or dev credentials, and run unit and integration tests.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-19: Staging and production environments",
+    "body": "SDD Feature Name: FR-19: Staging and production environments\nSRS Requirement: FR-19\n\nProblem Statement:\nImplement FR-19 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system supports at least a staging environment for testing and a production environment for public access.\n- [ ] Configuration (URLs, credentials, feature flags) shall be environment-specific and not hard-coded.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 1/5",
+    "body": "SDD Feature Name: FR-20: National Court Discovery as a Registry and Verification Pipeline\nSRS Requirement: FR-20\n\nProblem Statement:\nImplement FR-20 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 1/5).\n\nAcceptance Criteria:\n- [ ] The system shall implement court discovery as a canonical registry and verification pipeline, not as a generalized web-crawling process.\n- [ ] The system shall maintain a single authoritative Court Registry as the source of truth for all courts in the United States.\n- [ ] Each court in the Court Registry shall have a stable, unique identifier that persists across URL changes, renaming, or restructuring.\n- [ ] The Court Registry shall store, at minimum: jurisdiction level, court type, state, county/locality identifiers, hierarchical relationships, official website URL(s), provenance source(s), and verification status.\n- [ ] The Court Registry shall be versioned, auditable, and human-reviewable, including the ability to view historical changes and the provenance/rationale for edits.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 2/5",
+    "body": "SDD Feature Name: FR-20: National Court Discovery as a Registry and Verification Pipeline\nSRS Requirement: FR-20\n\nProblem Statement:\nImplement FR-20 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 2/5).\n\nAcceptance Criteria:\n- [ ] The system shall seed the Court Registry from authoritative, official judicial directories published by state judicial branches, administrative offices of the courts, or equivalent official entities.\n- [ ] Registry expansion shall proceed outward from authoritative sources; generalized web crawling shall not be used as a primary discovery mechanism.\n- [ ] When authoritative directories are incomplete, secondary aggregators may be used only as non-authoritative hints to identify potentially missing courts.\n- [ ] Secondary aggregator hints shall never be treated as canonical sources and shall require independent verification before a court is added to the Court Registry.\n- [ ] The system shall support modular, state-specific adapters that ingest court listings from official state sources and emit standardized Court Registry updates.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 3/5",
+    "body": "SDD Feature Name: FR-20: National Court Discovery as a Registry and Verification Pipeline\nSRS Requirement: FR-20\n\nProblem Statement:\nImplement FR-20 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 3/5).\n\nAcceptance Criteria:\n- [ ] State adapters shall be independently maintainable, replaceable, and testable; changes in a state website’s structure shall be isolated to the corresponding adapter without affecting other states.\n- [ ] The system shall define a national taxonomy of court types and jurisdiction levels.\n- [ ] Each state shall map its court naming conventions and structures to the national taxonomy via explicit configuration.\n- [ ] Raw state-specific court names and labels shall be preserved alongside normalized national classifications.\n- [ ] The system shall support hierarchical court models that vary by state (e.g., multi-tier trial courts, specialty courts, and administrative divisions).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 4/5",
+    "body": "SDD Feature Name: FR-20: National Court Discovery as a Registry and Verification Pipeline\nSRS Requirement: FR-20\n\nProblem Statement:\nImplement FR-20 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 4/5).\n\nAcceptance Criteria:\n- [ ] The system shall remain up-to-date via scheduled verification and event-driven signals.\n- [ ] Scheduled verification shall periodically validate court URLs, detect redirects or failures, and re-run state adapters when authoritative sources change.\n- [ ] Event-driven signals shall include user reports, partner notifications, and automated anomaly detection.\n- [ ] URL changes, court renaming, and structural reorganization shall be treated as expected events and shall result in versioned registry updates rather than being treated as errors.\n- [ ] The registry and adapters shall be maintainable by a distributed team of volunteers, with documentation sufficient to add or update courts without deep engineering expertise.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-20: National Court Discovery as a Registry and Verification Pipeline — Part 5/5",
+    "body": "SDD Feature Name: FR-20: National Court Discovery as a Registry and Verification Pipeline\nSRS Requirement: FR-20\n\nProblem Statement:\nImplement FR-20 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 5/5).\n\nAcceptance Criteria:\n- [ ] Registry updates shall follow a lightweight review and approval workflow with clear provenance requirements.\n- [ ] Validation rules shall prevent duplicate courts, missing required fields, and inconsistent hierarchy.\n- [ ] The Court Registry shall drive downstream systems, including CKAN organization creation, dataset ownership, and ingestion pipelines.\n- [ ] CKAN shall reflect the Court Registry but shall not serve as the canonical source of court identity or structure.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts — Part 1/2",
+    "body": "SDD Feature Name: FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts\nSRS Requirement: FR-21\n\nProblem Statement:\nImplement FR-21 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 1/2).\n\nAcceptance Criteria:\n- [ ] The system shall provide an automated, repeatable process to bootstrap and continuously synchronize CKAN court “organization” entities from the Court Registry.\n- [ ] The initial implementation shall support, at minimum, all courts enumerated by the authoritative official court directories for North Carolina and South Carolina as configured registry sources.\n- [ ] Each sync run shall produce a machine-readable coverage report for NC and SC that enumerates: authoritative source entries discovered, Court Registry entries created/updated, entries pending verification, entries excluded (with reasons), and the timestamp/version of the source inputs used.\n- [ ] The sync process shall be idempotent: running it multiple times with unchanged Court Registry input shall not create duplicates and shall result in no net CKAN changes.\n- [ ] The sync process shall support a dry-run mode that outputs a planned change set (create/update/deactivate) without modifying CKAN.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts — Part 2/2",
+    "body": "SDD Feature Name: FR-21: CKAN Bootstrap and Registry Sync for North Carolina and South Carolina Courts\nSRS Requirement: FR-21\n\nProblem Statement:\nImplement FR-21 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 2/2).\n\nAcceptance Criteria:\n- [ ] CKAN organizations created/managed by this process shall be keyed to the Court Registry’s stable court identifier, and the CKAN organization “name/slug” shall remain stable across court renames or URL changes.\n- [ ] The system shall represent court hierarchy in CKAN in a deterministic, queryable way (even if CKAN lacks native hierarchical orgs), at minimum by storing court_id and parent_court_id (and/or equivalent fields) in organization metadata (e.g., extras) and ensuring the UI/API can reconstruct hierarchy from those fields.\n- [ ] The sync process shall detect and report drift between CKAN and the derived state from the Court Registry (including manual edits), and shall either reconcile drift automatically or require explicit maintainer approval per documented policy.\n- [ ] The sync process shall not hard-delete CKAN organizations by default; when a court is merged, split, or deactivated in the Court Registry, the corresponding CKAN organization shall be marked inactive/archived in a reversible way while preserving auditability.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution — Part 1/2",
+    "body": "SDD Feature Name: FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution\nSRS Requirement: FR-22\n\nProblem Statement:\nImplement FR-22 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 1/2).\n\nAcceptance Criteria:\n- [ ] The system shall support ingesting court listings from multiple authoritative registries (e.g., statewide and circuit-level directories) even when those sources contain overlapping/duplicate references to the same real-world court.\n- [ ] The Court Registry shall assign and maintain a stable, unique court identifier for each real-world court.\n- [ ] The system shall detect potential duplicates using a multi-signal approach including, at minimum: normalized court name(s), jurisdiction level, court type, state, county/locality identifiers, hierarchical relationships (parent/child), and authoritative source identifiers/codes when available.\n- [ ] Official website URL(s) shall be treated as a supporting signal for duplicate detection and verification; the system shall explicitly forbid URL-only duplicate detection and shall not assume that equal or unequal URLs imply the same or different courts.\n- [ ] When a potential duplicate is detected, the system shall record a structured, human-reviewable match report that includes the matching signals used, confidence/score (if applicable), and a recommended action (e.g., merge, keep separate, request more evidence).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution — Part 2/2",
+    "body": "SDD Feature Name: FR-22: Court Registry Duplicate Detection and Canonical Identity Resolution\nSRS Requirement: FR-22\n\nProblem Statement:\nImplement FR-22 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 2/2).\n\nAcceptance Criteria:\n- [ ] If court identity resolution results in a merge, split, or re-parenting, the system shall preserve provenance and versioned change history, including the rationale and any affected authoritative source references.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "DG-1: Public, non-confidential data",
+    "body": "SDD Feature Name: DG-1: Public, non-confidential data\nSRS Requirement: DG-1\n\nProblem Statement:\nImplement DG-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The platform focuses on public, non-confidential data; it shall not intentionally store or publish sealed records, confidential information, or PII beyond what is already publicly published by courts.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-2: Minimal PII",
+    "body": "SDD Feature Name: DG-2: Minimal PII\nSRS Requirement: DG-2\n\nProblem Statement:\nImplement DG-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Where court data inherently contains names or identifiers, the portal shall document that the data is sourced from public records and consider redaction policies for particularly sensitive content if practical.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-3: Clear distinction between official and derived data",
+    "body": "SDD Feature Name: DG-3: Clear distinction between official and derived data\nSRS Requirement: DG-3\n\nProblem Statement:\nImplement DG-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall clearly differentiate between official court publications (linked to original sources) and derived datasets processed by opencourts.fyi or community members.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-4: Contributor terms",
+    "body": "SDD Feature Name: DG-4: Contributor terms\nSRS Requirement: DG-4\n\nProblem Statement:\nImplement DG-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Contributors shall agree to terms stating that they have rights to publish the data/visualizations, their submissions comply with applicable court Terms of Use and law, and they will not upload malicious, discriminatory, or privacy-violating content.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n- Visualization layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-5: Provenance requirement",
+    "body": "SDD Feature Name: DG-5: Provenance requirement\nSRS Requirement: DG-5\n\nProblem Statement:\nImplement DG-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Community submissions shall be required to provide data sources and URLs, and indicate whether data is original, derived, or repackaged.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-6: Auditability",
+    "body": "SDD Feature Name: DG-6: Auditability\nSRS Requirement: DG-6\n\nProblem Statement:\nImplement DG-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] For each dataset and community submission, the system shall log who submitted it, who approved it, AI review results, and timestamps of all key actions.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-7: Takedown workflow",
+    "body": "SDD Feature Name: DG-7: Takedown workflow\nSRS Requirement: DG-7\n\nProblem Statement:\nImplement DG-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall implement a documented process for handling requests, including time frame for acknowledgment, temporary hide while under review (for serious issues), and escalation path (e.g., to legal partners or court liaisons) where needed.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-governance",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Outreach",
+    "labels": [
+      "documentation"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "DG-8: Corrections and annotations",
+    "body": "SDD Feature Name: DG-8: Corrections and annotations\nSRS Requirement: DG-8\n\nProblem Statement:\nImplement DG-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall allow maintainers to add correction notes to datasets and point to updated versions or official corrections from courts.\n\nDependencies:\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 4: Automated Ingestion & Medallion Pipeline",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-1: Public governance decision log",
+    "body": "SDD Feature Name: GC-1: Public governance decision log\nSRS Requirement: GC-1\n\nProblem Statement:\nImplement GC-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The project shall maintain a public, linkable log of governance decisions (e.g., GitHub issues/discussions/PRs) including the decision, rationale, and date.\n- [ ] Decisions related to publication status, takedowns, major schema changes, and policy changes shall be logged.\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-governance",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Outreach",
+    "labels": [
+      "documentation"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-2: Truthiness evaluation metadata",
+    "body": "SDD Feature Name: GC-2: Truthiness evaluation metadata\nSRS Requirement: GC-2\n\nProblem Statement:\nImplement GC-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] For each published dataset, the system shall support recording and displaying a “truthiness evaluation” summary that includes:\n- [ ] What the dataset claims to represent (scope/coverage)\n- [ ] Verification steps taken (if any) against official sources\n- [ ] Known limitations, uncertainty, and potential biases\n- [ ] Provenance links and timestamps\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-3: Community challenge and re-evaluation workflow",
+    "body": "SDD Feature Name: GC-3: Community challenge and re-evaluation workflow\nSRS Requirement: GC-3\n\nProblem Statement:\nImplement GC-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Any user shall be able to challenge a dataset’s accuracy, provenance, or interpretation via a public issue.\n- [ ] Maintainers/moderators shall be able to attach an outcome (e.g., acknowledged, corrected, disputed, withdrawn) and link to resulting changes.\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-4: Public moderation outcomes (with safe redactions)",
+    "body": "SDD Feature Name: GC-4: Public moderation outcomes (with safe redactions)\nSRS Requirement: GC-4\n\nProblem Statement:\nImplement GC-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] For community submissions and takedown requests, the system shall publish the outcome and a brief rationale.\n- [ ] The system shall support redaction of sensitive details in public rationales when necessary (e.g., to avoid amplifying PII), while still preserving an auditable record for maintainers.\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-5: Low-friction participation",
+    "body": "SDD Feature Name: GC-5: Low-friction participation\nSRS Requirement: GC-5\n\nProblem Statement:\nImplement GC-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Contributor registration (if required) shall be open and lightweight.\n- [ ] The project shall provide a non-authenticated contribution path for reporting issues and suggesting improvements (e.g., GitHub issues or a public contact method).\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-6: Independence and “bus factor” resilience",
+    "body": "SDD Feature Name: GC-6: Independence and “bus factor” resilience\nSRS Requirement: GC-6\n\nProblem Statement:\nImplement GC-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] No critical workflow (publishing, takedowns, schema releases) shall depend on a single individual.\n- [ ] The project shall maintain at least two administrators/maintainers with the ability to operate and recover core systems.\n- [ ] Administrative access recovery (e.g., credential rotation, access handoff, break-glass procedure) shall be documented.\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-governance",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Outreach",
+    "labels": [
+      "documentation"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-7: Annual review publication",
+    "body": "SDD Feature Name: GC-7: Annual review publication\nSRS Requirement: GC-7\n\nProblem Statement:\nImplement GC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] At least once per year, maintainers shall publish a brief public review summarizing:\n- [ ] Data coverage and major changes\n- [ ] Key improvements\n- [ ] Known issues and limitations\n- [ ] High-level plans for the coming year\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-governance",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Outreach",
+    "labels": [
+      "documentation"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-8: AI self-identification and labeling",
+    "body": "SDD Feature Name: GC-8: AI self-identification and labeling\nSRS Requirement: GC-8\n\nProblem Statement:\nImplement GC-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Any automated agent (including AI systems) interacting with humans on behalf of the project shall clearly self-identify as automated at the start of each interaction.\n- [ ] AI-generated outputs used in review, moderation, or publication decisions shall be labeled as AI-generated in the UI and in any exported artifacts (e.g., JSON reports).\n- [ ] The system shall prevent AI-generated content from being displayed in a way that could reasonably be interpreted as a human-authored statement (e.g., by including an “AI-generated” label adjacent to the content).\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-9: National Court Discovery as a Registry and Verification Pipeline",
+    "body": "SDD Feature Name: GC-9: National Court Discovery as a Registry and Verification Pipeline\nSRS Requirement: GC-9\n\nProblem Statement:\nImplement GC-9 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Court identity, hierarchy, and official URLs shall be governed through a versioned, auditable Court Registry with a lightweight human review/approval workflow for changes.\n- [ ] The governance process shall require provenance for registry entries and updates, including whether a change originated from an authoritative directory, a state adapter run, a verified partner report, or a user-submitted issue.\n- [ ] The governance process shall explicitly prohibit treating non-authoritative aggregators or generalized web crawling as canonical sources of court identity.\n- [ ] Maintainers shall be able to produce a public, reviewable change log and periodic audit artifacts (e.g., diffs/reports) showing registry additions, removals, merges/splits, URL changes, and verification status changes.\n- [ ] Governance decisions and implementation choices for the registry and adapters shall prioritize durability, auditability, low operational cost, and long-term scalability to all 50 U.S. states.\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n- Data ingestion and processing\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "GC-10: CKAN Bootstrap and Registry Sync Auditability",
+    "body": "SDD Feature Name: GC-10: CKAN Bootstrap and Registry Sync Auditability\nSRS Requirement: GC-10\n\nProblem Statement:\nImplement GC-10 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] CKAN court-organization state derived from the Court Registry shall be reproducible from versioned inputs, including the registry version and the sync tool/script version.\n- [ ] Each sync run shall produce a public, reviewable artifact (e.g., JSON/CSV report or diff summary) describing proposed/applied changes, including counts of created/updated/deactivated organizations and any drift detected.\n- [ ] Manual edits to CKAN court-organization metadata that is designated as registry-derived shall be discouraged; if performed, the governance process shall require either (a) backporting the change to the Court Registry or (b) documenting an explicit override rule so the next sync run is predictable and auditable.\n\nDependencies:\n- AI review and governance layer\n- Web portal and API layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 2: National Court Registry & State Seeding",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "SEC-1: Roles and permissions",
+    "body": "SDD Feature Name: SEC-1: Roles and permissions\nSRS Requirement: SEC-1\n\nProblem Statement:\nImplement SEC-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Roles include at least: Anonymous (read-only access to public data), Contributor (can submit datasets/resources for review), Moderator (can approve/reject submissions and manage content), Admin (full system configuration and user management).\n- [ ] Only moderators/admins can change review status, set or override review badges, and publish to production.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-2: Authentication",
+    "body": "SDD Feature Name: SEC-2: Authentication\nSRS Requirement: SEC-2\n\nProblem Statement:\nImplement SEC-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Admins and moderators shall use strong authentication, ideally via federated identity (e.g., SSO with MFA).\n- [ ] Contributor accounts shall require strong passwords and rate-limited login attempts.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-3: Encryption",
+    "body": "SDD Feature Name: SEC-3: Encryption\nSRS Requirement: SEC-3\n\nProblem Statement:\nImplement SEC-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] All web traffic shall use HTTPS.\n- [ ] Data at rest (databases and storage) shall be encrypted using platform-native encryption.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-4: Network controls",
+    "body": "SDD Feature Name: SEC-4: Network controls\nSRS Requirement: SEC-4\n\nProblem Statement:\nImplement SEC-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Databases shall not be directly publicly accessible from the internet.\n- [ ] Only the web application and authorized backend services shall access the database and storage.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-5: Secret management",
+    "body": "SDD Feature Name: SEC-5: Secret management\nSRS Requirement: SEC-5\n\nProblem Statement:\nImplement SEC-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Secrets (DB passwords, API keys, AI credentials) shall be stored in a secure secret manager (e.g., Key Vault), not in Git.\n- [ ] Terraform and CI/CD pipelines shall reference secrets from secure stores.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- Data ingestion and processing\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-6: Input validation & sanitization",
+    "body": "SDD Feature Name: SEC-6: Input validation & sanitization\nSRS Requirement: SEC-6\n\nProblem Statement:\nImplement SEC-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] User-submitted content (titles, descriptions, HTML, embeds) shall be sanitized to prevent XSS and injection.\n- [ ] Embed support shall be restricted to safe patterns (e.g., whitelisted domains).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-7: Dependency management",
+    "body": "SDD Feature Name: SEC-7: Dependency management\nSRS Requirement: SEC-7\n\nProblem Statement:\nImplement SEC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall track dependencies and apply security patches regularly.\n- [ ] Only vetted CKAN extensions or libraries shall be used.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "SEC-8: Logging & anomaly detection",
+    "body": "SDD Feature Name: SEC-8: Logging & anomaly detection\nSRS Requirement: SEC-8\n\nProblem Statement:\nImplement SEC-8 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Authentication failures, unexpected errors, and unusual submission patterns shall be logged.\n- [ ] Alerts shall be configured for suspicious patterns (e.g., spikes in failed logins or AI-detected PII).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "MON-1: Uptime and health checks",
+    "body": "SDD Feature Name: MON-1: Uptime and health checks\nSRS Requirement: MON-1\n\nProblem Statement:\nImplement MON-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall expose a basic health endpoint and be monitored by an external uptime service.\n- [ ] Alerts shall be configured for site unavailability and high error rates (5xx).\n\nDependencies:\n- Web portal and API layer\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "MON-2: Resource monitoring",
+    "body": "SDD Feature Name: MON-2: Resource monitoring\nSRS Requirement: MON-2\n\nProblem Statement:\nImplement MON-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] CPU, memory, disk usage, and database health shall be monitored.\n- [ ] Alerts shall be configured for threshold breaches that risk downtime or data loss.\n\nDependencies:\n- Web portal and API layer\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "MON-3: Centralized logging",
+    "body": "SDD Feature Name: MON-3: Centralized logging\nSRS Requirement: MON-3\n\nProblem Statement:\nImplement MON-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Application logs (portal, API) and system logs (web server, DB) shall be centralized in a logging system for analysis and incident response.\n\nDependencies:\n- Web portal and API layer\n- Data ingestion and processing\n- Storage layer\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "DR-1: Regular backups",
+    "body": "SDD Feature Name: DR-1: Regular backups\nSRS Requirement: DR-1\n\nProblem Statement:\nImplement DR-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Databases shall be backed up regularly (e.g., nightly), with retention appropriate for reconstruction and audit.\n- [ ] Backups shall be stored in a separate, secure storage location.\n- [ ] At least 30 days of backups shall be retained.\n\nDependencies:\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "DR-2: Restore testing",
+    "body": "SDD Feature Name: DR-2: Restore testing\nSRS Requirement: DR-2\n\nProblem Statement:\nImplement DR-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Procedures to restore from backup shall be documented and tested at least quarterly.\n\nDependencies:\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "DR-3: Infrastructure rebuild",
+    "body": "SDD Feature Name: DR-3: Infrastructure rebuild\nSRS Requirement: DR-3\n\nProblem Statement:\nImplement DR-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Terraform definitions shall support recreating the infrastructure in staging and production from scratch if needed.\n\nDependencies:\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "INF-1: Terraform-managed resources",
+    "body": "SDD Feature Name: INF-1: Terraform-managed resources\nSRS Requirement: INF-1\n\nProblem Statement:\nImplement INF-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Core infrastructure (compute, networking, storage, database, monitoring) shall be defined in Terraform.\n- [ ] Both staging and production environments shall be defined using Terraform with environment-specific variables.\n\nDependencies:\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "INF-2: Git-based workflows",
+    "body": "SDD Feature Name: INF-2: Git-based workflows\nSRS Requirement: INF-2\n\nProblem Statement:\nImplement INF-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Infrastructure configuration shall be stored in Git.\n- [ ] Changes shall go through pull requests and review before being applied.\n- [ ] Volunteers shall be able to edit Terraform files and submit changes under review.\n\nDependencies:\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "INF-3: Automated deployment",
+    "body": "SDD Feature Name: INF-3: Automated deployment\nSRS Requirement: INF-3\n\nProblem Statement:\nImplement INF-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall support automated deployment workflows for applying Terraform changes and deploying application updates.\n- [ ] Staging deployments shall be tested before promoting to production.\n\nDependencies:\n- Infrastructure-as-code\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "INF-3A: Data pipeline configuration in GitHub",
+    "body": "SDD Feature Name: INF-3A: Data pipeline configuration in GitHub\nSRS Requirement: INF-3A\n\nProblem Statement:\nImplement INF-3A as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Azure Data Factory (ADF) pipeline configurations (pipelines, datasets, linked services, triggers, and related artifacts) shall be stored in a GitHub repository using ADF Git integration.\n- [ ] GitHub shall be the source of truth for ADF pipeline configurations; changes shall be made in Git and promoted via pull requests and review before being published/deployed to ADF environments.\n\nDependencies:\n- Infrastructure-as-code\n- Data ingestion and processing\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "INF-4: Local environment parity",
+    "body": "SDD Feature Name: INF-4: Local environment parity\nSRS Requirement: INF-4\n\nProblem Statement:\nImplement INF-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Developers shall be able to run a local stack (portal + DB + minimal storage) with a small sample dataset and mocked or configurable AI review endpoints.\n- [ ] Documentation shall exist for setup, running tests, and contributing via Git.\n\nDependencies:\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-infra",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "DevOps",
+    "labels": [
+      "infra",
+      "feature"
+    ],
+    "priority": "High"
+  },
+  {
+    "title": "NFR-1: Availability",
+    "body": "SDD Feature Name: NFR-1: Availability\nSRS Requirement: NFR-1\n\nProblem Statement:\nImplement NFR-1 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Target availability for the public portal: 99%+ (no strict SLA, but practical reliability).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "NFR-2: Performance",
+    "body": "SDD Feature Name: NFR-2: Performance\nSRS Requirement: NFR-2\n\nProblem Statement:\nImplement NFR-2 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] Typical dataset search and page loads shall complete within a few seconds under normal load.\n- [ ] CSV/JSON API responses shall be reasonably responsive for moderate dataset sizes (tens to hundreds of thousands of rows).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "NFR-3: Usability",
+    "body": "SDD Feature Name: NFR-3: Usability\nSRS Requirement: NFR-3\n\nProblem Statement:\nImplement NFR-3 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The UI shall be accessible and usable by non-technical users.\n- [ ] Data catalog and documentation shall be understandable by journalists and policymakers without technical training.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "NFR-4: Accessibility",
+    "body": "SDD Feature Name: NFR-4: Accessibility\nSRS Requirement: NFR-4\n\nProblem Statement:\nImplement NFR-4 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The site shall follow accessibility best practices (e.g., WCAG-inspired) where feasible.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "NFR-5: Transparency & trust",
+    "body": "SDD Feature Name: NFR-5: Transparency & trust\nSRS Requirement: NFR-5\n\nProblem Statement:\nImplement NFR-5 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] The system shall prioritize clear messaging on data sources, limitations and caveats, and review and governance processes.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n",
+    "repo": "opencourts-ckan",
+    "milestone": "Milestone 1: Secure Infrastructure & Local Development",
+    "activity_type": "Software Development",
+    "labels": [
+      "backend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "NFR-6: Court Record Custody and Source Preservation Policy — Part 1/2",
+    "body": "SDD Feature Name: NFR-6: Court Record Custody and Source Preservation Policy\nSRS Requirement: NFR-6\n\nProblem Statement:\nImplement NFR-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 1/2).\n\nAcceptance Criteria:\n- [ ] The system shall distinguish between (a) records stored in Azure Blob Storage (copied/preserved artifacts) and (b) records referenced via external URLs (link-only resources), and shall expose this distinction in dataset/resource metadata.\n- [ ] When the platform performs or publishes derivative works, analytics products, versioned datasets, or long-term citations that depend on a source file, the system shall copy the source file into Azure Blob Storage and treat that copy as the preserved input artifact for reproducibility.\n- [ ] When the platform is acting solely as a discovery/catalog layer (i.e., no derivatives, analytics, versioning, or long-term citation requirements), the system shall link to the original court-hosted file(s) rather than copying them.\n- [ ] For every copied/preserved file in Azure Blob Storage, the system shall support provenance tracking, hashing, and versioning at minimum including: original source URL, retrieval timestamp, cryptographic hash (e.g., SHA-256), size, content type, and a version identifier that links derivatives back to the specific preserved source artifact.\n- [ ] The system shall apply this policy uniformly across all court types and all record formats supported by the portal (e.g., CSV, JSON, PDF, HTML, images, and other downloadable artifacts).\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "NFR-6: Court Record Custody and Source Preservation Policy — Part 2/2",
+    "body": "SDD Feature Name: NFR-6: Court Record Custody and Source Preservation Policy\nSRS Requirement: NFR-6\n\nProblem Statement:\nImplement NFR-6 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement acceptance criteria for this SDD entry (Part 2/2).\n\nAcceptance Criteria:\n- [ ] The system shall document the custody decision for each dataset and each resource as metadata (e.g., custody_mode = link_only | copied_to_blob, with associated fields such as external_url and/or blob_uri, plus a rationale/category such as discovery_only | derivative_required | analytics_required | versioning_required | long_term_citation_required).\n- [ ] The system shall make this policy enforceable and auditable by ensuring (a) custody metadata is required at publish time, (b) custody decisions and changes are logged with actor and timestamp, and (c) maintainers can generate an audit report enumerating all datasets/resources and their custody mode, hashes (for copied files), and version lineage.\n- [ ] The implementation shall align with cost-effective, volunteer-operated infrastructure by minimizing unnecessary copying, enabling retention/lifecycle controls for preserved artifacts, and supporting link-only operation where appropriate without sacrificing provenance transparency.\n\nDependencies:\n- Web portal and API layer\n- Storage layer\n- Infrastructure-as-code\n- AI review and governance layer\n",
+    "repo": "opencourts-etl",
+    "milestone": "Milestone 6: Reliability & Long-term Operations",
+    "activity_type": "Software Development",
+    "labels": [
+      "frontend",
+      "feature"
+    ],
+    "priority": "Medium"
+  },
+  {
+    "title": "Nice to Have: MCP tools to manage and query the data resources.",
+    "body": "SDD Feature Name: Nice to Have: MCP tools to manage and query the data resources.\nSRS Section: Nice to Have\n\nProblem Statement:\nImplement the Nice to Have item as described in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).\n\nTask:\nImplement the acceptance criteria for this SDD entry.\n\nAcceptance Criteria:\n- [ ] MCP tools to manage and query the data resources.\n\nDependencies:\n- Web portal and API layer\n",
+    "repo": "opencourts-governance",
+    "milestone": "Milestone 5: Community Governance & AI Review",
+    "activity_type": "Outreach",
+    "labels": [
+      "documentation"
+    ],
+    "priority": "Low"
+  }
+]
