@@ -1426,28 +1426,27 @@
 
 ### SDD Entry
 - **Feature Name:**  
-  SEC-7: Dependency management
+  SEC-7: Security and License Scanning with CI/CD Integration
 
 - **Problem Statement:**  
   Implement SEC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
 - **User Stories:**  
-  - As a user, I can Dependency management.
+  - As a maintainer, I want automated dependency tracking, vulnerability blocking, and license compliance scanning so that unauthorized, vulnerable, or non-permissive libraries are prevented from entering the codebase.
 
 - **Acceptance Criteria:**  
-  - The system shall track dependencies and apply security patches regularly.
-  - Only vetted CKAN extensions or libraries shall be used.
+  - Dependabot Active: GitHub Dependabot security and version updates are enabled across all project repositories monitoring all Python and container manifest files.
+  - Vulnerability Security Gate: CI/CD workflows run automated vulnerability audits (`pip audit` or `safety`) on every PR, automatically failing and blocking merge for any PR introducing high or critical severity CVEs.
+  - Automated license scanning (using tools such as `pip-licenses` or `licensecheck`) shall run as a required CI/CD step for every project repository to ensure all dependency changes comply with the project's strict open-licensing mandates (permissive licenses such as CC0, CC-BY 4.0, or PDDL).
 
 - **Dependencies:**  
-  - Web portal and API layer
-  - Storage layer
-  - Infrastructure-as-code
+  - Code hosting infrastructure (Github)
 
 - **Target Repository:**  
-  opencourts-infra
+  all
 
 - **Labels:**  
-  ["infra", "feature"]
+  ["compliance", "security"]
 
 - **Priority:**  
   High
