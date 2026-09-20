@@ -356,14 +356,16 @@ The following requirements ensure that implementation decisions remain compatibl
   - User-submitted content (titles, descriptions, HTML, embeds) shall be sanitized to prevent XSS and injection.
   - Embed support shall be restricted to safe patterns (e.g., whitelisted domains).
 
-- **SEC-7: Security and License Scanning with CI/CD Integration**
+- **SEC-7: Security Scanning**
   - Automatic security updates and version updates shall be enabled across all project repositories. The system shall automatically monitor package manifests (e.g., Python `requirements.txt`/`pyproject.toml`, Dockerfiles) and generate Pull Requests when vulnerabilities or patch updates are released.
   - CI/CD Pipeline Security Gates: Automated vulnerability auditing tools (such as `pip audit`, `safety`, or GitHub Advanced Security checks) shall be integrated into GitHub Actions workflows. Pull Requests containing dependencies with known high or critical security vulnerabilities shall be automatically blocked from merging.
-  - License Verification: Automated license scanning (using tools such as `pip-licenses` or `licensecheck`) shall run as a required CI/CD step for every project repository to ensure all dependency changes comply with the project's strict open-licensing mandates (permissive licenses such as CC0, CC-BY 4.0, or PDDL).
 
 - **SEC-8: Logging & anomaly detection**
   - Authentication failures, unexpected errors, and unusual submission patterns shall be logged.
   - Alerts shall be configured for suspicious patterns (e.g., spikes in failed logins or AI-detected PII).
+
+- **SEC-9: License Scanning**
+  - License Verification: Automated license scanning (using tools such as `pip-licenses` or `licensecheck`) shall run as a required CI/CD step for every project repository to ensure all dependency changes comply with the project's open-licensing mandates (permissive licenses such as CC0 and CC-BY 4.0).
 
 ---
 

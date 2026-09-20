@@ -1426,7 +1426,7 @@
 
 ### SDD Entry
 - **Feature Name:**  
-  SEC-7: Security and License Scanning with CI/CD Integration
+  SEC-7: Security Scanning
 
 - **Problem Statement:**  
   Implement SEC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
@@ -1437,7 +1437,6 @@
 - **Acceptance Criteria:**  
   - Dependabot Active: GitHub Dependabot security and version updates are enabled across all project repositories monitoring all Python and container manifest files.
   - Vulnerability Security Gate: CI/CD workflows run automated vulnerability audits (`pip audit` or `safety`) on every PR, automatically failing and blocking merge for any PR introducing high or critical severity CVEs.
-  - Automated license scanning (using tools such as `pip-licenses` or `licensecheck`) shall run as a required CI/CD step for every project repository to ensure all dependency changes comply with the project's strict open-licensing mandates (permissive licenses such as CC0, CC-BY 4.0, or PDDL).
 
 - **Dependencies:**  
   - Code hosting infrastructure (Github)
@@ -1481,6 +1480,31 @@
 - **Priority:**  
   High
 
+
+### SDD Entry
+- **Feature Name:**  
+  SEC-9: License Scanning
+
+- **Problem Statement:**  
+  Implement SEC-9
+  
+- **User Stories:**  
+  - None (CI/CD)
+
+- **Acceptance Criteria:**  
+  - License Compliance Gate: CI/CD runs a license scan on every PR. The job fails if any direct or transitive dependency’s declared license is outside the approved permissive set. Failures require either removing the dependency or recording an approved waiver before merge.
+
+- **Dependencies:**  
+  - Infrastructure-as-code
+
+- **Target Repository:**  
+  opencourts-infra
+
+- **Labels:**  
+  ["infra", "feature"]
+
+- **Priority:**  
+  High
 
 ### SDD Entry
 - **Feature Name:**  
