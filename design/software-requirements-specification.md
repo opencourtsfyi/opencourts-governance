@@ -364,9 +364,6 @@ The following requirements ensure that implementation decisions remain compatibl
   - Authentication failures, unexpected errors, and unusual submission patterns shall be logged.
   - Alerts shall be configured for suspicious patterns (e.g., spikes in failed logins or AI-detected PII).
 
-- **SEC-9: License Scanning**
-  - License Verification: Automated license scanning (using tools such as `pip-licenses` or `licensecheck`) shall run as a required CI/CD step for every project repository to ensure all dependency changes comply with the project's open-licensing mandates (permissive licenses such as CC0 and CC-BY 4.0).
-
 ---
 
 ## 6. Monitoring, Reliability, and Disaster Recovery
