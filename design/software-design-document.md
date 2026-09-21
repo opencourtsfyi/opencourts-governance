@@ -1480,32 +1480,6 @@
 - **Priority:**  
   High
 
-
-### SDD Entry
-- **Feature Name:**  
-  SEC-9: License Scanning
-
-- **Problem Statement:**  
-  Implement SEC-9
-  
-- **User Stories:**  
-  - None (CI/CD)
-
-- **Acceptance Criteria:**  
-  - License Compliance Gate: CI/CD runs a license scan on every PR. The job fails if any direct or transitive dependency’s declared license is outside the approved permissive set. Failures require either removing the dependency or recording an approved waiver before merge.
-
-- **Dependencies:**  
-  - Infrastructure-as-code
-
-- **Target Repository:**  
-  opencourts-infra
-
-- **Labels:**  
-  ["infra", "feature"]
-
-- **Priority:**  
-  High
-
 ### SDD Entry
 - **Feature Name:**  
   MON-1: Uptime and health checks
