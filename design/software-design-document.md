@@ -1426,28 +1426,25 @@
 
 ### SDD Entry
 - **Feature Name:**  
-  SEC-7: Dependency management
+  SEC-7: Security Scanning
 
 - **Problem Statement:**  
   Implement SEC-7 as specified in the SRS. SRS source: design/software-requirements-specification.md @ f60ab579803f34b981304d712d689dcd81152be9 (blob 3e8b09c4c0d920385fcad9e5d5eb3fc960a89b29).
 
-- **User Stories:**  
-  - As a user, I can Dependency management.
-
 - **Acceptance Criteria:**  
-  - The system shall track dependencies and apply security patches regularly.
-  - Only vetted CKAN extensions or libraries shall be used.
+  - Dependabot Security: GitHub Dependabot is enabled for each repository in scope and configured to scan all supported dependency manifests, including Python package manifests (`requirements.txt`, `pyproject.toml` when present) and container build files (`Dockerfile`, `docker-compose*.yml` where applicable).
+  - Vulnerability Gate in CI/CD: Every pull request to the default branch for each in-scope repository shall run an automated dependency vulnerability scan using `pip-audit` and/or `safety` in CI. The workflow shall fail the check and block merge when any dependency with a high or critical vulnerability is introduced or remains unresolved.
+  - Evidence and Reporting: The CI workflow shall record the dependency vulnerability report as a job artifact or GitHub Actions log, and the repository shall provide a visible status check showing pass/fail for the vulnerability gate.
+  - Verification Procedure: A test PR that introduces a known vulnerable dependency version shall fail the security scan and prevent merge; a clean dependency set with no high or critical findings shall pass the security scan and allow merge.
 
 - **Dependencies:**  
-  - Web portal and API layer
-  - Storage layer
-  - Infrastructure-as-code
+  - Code hosting infrastructure (Github)
 
 - **Target Repository:**  
-  opencourts-infra
+  all
 
 - **Labels:**  
-  ["infra", "feature"]
+  ["compliance", "security"]
 
 - **Priority:**  
   High
@@ -1481,7 +1478,6 @@
 
 - **Priority:**  
   High
-
 
 ### SDD Entry
 - **Feature Name:**  

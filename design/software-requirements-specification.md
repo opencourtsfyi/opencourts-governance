@@ -356,9 +356,9 @@ The following requirements ensure that implementation decisions remain compatibl
   - User-submitted content (titles, descriptions, HTML, embeds) shall be sanitized to prevent XSS and injection.
   - Embed support shall be restricted to safe patterns (e.g., whitelisted domains).
 
-- **SEC-7: Dependency management**
-  - The system shall track dependencies and apply security patches regularly.
-  - Only vetted CKAN extensions or libraries shall be used.
+- **SEC-7: Security Scanning**
+  - Automatic security updates and version updates shall be enabled across all project repositories. The system shall automatically monitor package manifests (e.g., Python `requirements.txt`/`pyproject.toml`, Dockerfiles) and generate Pull Requests when vulnerabilities or patch updates are released.
+  - CI/CD Pipeline Security Gates: Automated vulnerability auditing tools (such as `pip audit`, `safety`, or GitHub Advanced Security checks) shall be integrated into GitHub Actions workflows. Pull Requests containing dependencies with known high or critical security vulnerabilities shall be automatically blocked from merging.
 
 - **SEC-8: Logging & anomaly detection**
   - Authentication failures, unexpected errors, and unusual submission patterns shall be logged.
