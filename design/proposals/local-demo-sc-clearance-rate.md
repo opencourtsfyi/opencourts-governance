@@ -98,6 +98,7 @@ Clearance rate is a simple mean of adding up all the dispositions (closed files)
 Clearance rate is calculated as total cases closed divided by total cases opened, multiplied by 100. For Charleston, the three-month totals are 1,140 closed and 1,200 opened, so its clearance rate is 1,140 ÷ 1,200 × 100 = **95%**.
 
 More generally, clearance rate can be calculated from monthly metrics using:
+
 $$
 \text{Clearance Rate (\%)} =
 \left(
@@ -109,6 +110,8 @@ $$
 
 ### 3.4 Analytics & Exploration Layer
 * **PowerBI Desktop:** Allows non-programmers to ingest files directly or query the Flask REST API. Use a web connect to pull the data and show that updates to the data are reflected in PowerBI.
+
+* **Excel:** Allows non-programmers to open data in Excel using PowerQuery web api and simply downloading and opening the CSV file.
 
 ### 3.5 Visualization Layer (`FR-17`, `NFR-3`)
 * **TypeScript + Vite App:** Interactive choropleth map rendering South Carolina's 46 counties color-coded by clearance rate. Data is visualized using a Topojson file. Use three colors: 
